@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Riwayat Anak</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Riwayat Pertumbuhan Anak</h1>
+        <p>Cari data anak berdasarkan nama untuk melihat riwayat pertumbuhan.</p>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Masukkan Nama Anak...">
+            <button onclick="searchData()">Cari</button>
+        </div>
+
+        <div id="loading" class="hidden">
+            <p>Memuat data...</p>
+        </div>
+
+        <div id="results">
+            </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Sistem Riwayat Anak. Semua Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
